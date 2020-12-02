@@ -1,8 +1,11 @@
-const shareBtn = document.querySelector('.share-links');
-const shareDiv = document.querySelector('.share-content');
+const shareBtn = document.querySelector('.share-btn');
+const avatarImg = document.querySelector('#avatar')
+const nameDiv = document.querySelector('.name')
+const shareContent = document.querySelector('.share-content')
 
 shareBtn.addEventListener('click', () => {
-  shareDiv.classList.toggle('hide')
-  shareDiv.setAttribute('opacity', '1');
-  shareDiv.setAttribute('display', 'inline-block');
+
+ avatarImg.classList.toggle('hide')
+ nameDiv.classList.toggle('hide')
+ shareContent.classList.toggle('hide')
 })
